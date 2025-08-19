@@ -1,5 +1,6 @@
 let button = document.getElementById("button");
 let buttonText = document.getElementById("button-text")
+let reset = document.getElementById("reset");
 let hours = document.getElementById("hours");
 let minutes = document.getElementById("minutes");
 let seconds = document.getElementById("seconds");
@@ -10,15 +11,25 @@ let mins = 0;
 let sec = 0;
 
 button.addEventListener("click", () => {
-    if(buttonText.innerText === "Start"){
+    if (buttonText.innerText === "Start") {
         buttonText.innerText = "Stop";
         timer = true;
         start();
 
-    } else{
+    } else {
         buttonText.innerText = "Start";
         timer = false;
     }
+})
+
+reset.addEventListener("click", () => {
+    hours.innerText = "00";
+    minutes.innerText = "00";
+    seconds.innerText = "00";
+    hrs = 0;
+    mins = 0;
+    sec = 0;
+    count = 0;
 })
 
 function start() {
@@ -28,13 +39,13 @@ function start() {
             sec++;
             count = 0;
         }
-        
-        if(sec === 59){
+
+        if (sec === 59) {
             mins++;
             sec = 0;
         }
 
-        if(mins === 59){
+        if (mins === 59) {
             hrs++;
             mins = 0;
         }
