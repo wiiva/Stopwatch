@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    background-color: pink;
+}
+#title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #4C314F;
+    text-decoration: underline;
+}
+#watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34rem;
+    height: 16rem;
+    background-color: #4C314F;
+    border-radius: 12%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    height: 12rem;
+    width: 9rem;
+    border: #4C314F, solid, 3px;
+    flex-direction: row;
+    margin: 10px;
+    background-color: pink;
+    text-align: center;
+}
+
+.box p{
+    font-size: 130px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4C314F;
+    text-shadow: 1px 1px 2px pink;
+}
+
+#button{
+    border-radius: 12px;
+    background-color: #4C314F;
+    color: pink;
+    border: 0px ;
+    width: 7rem;
+    height: 3rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#button-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin: auto;
+
+}
+
+#button:hover{
+    background-color: #7e5a83;
+    color: #4C314F;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
